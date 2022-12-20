@@ -1,0 +1,50 @@
+<div>
+    <app-navbar></app-navbar>
+    <div class="w-50 mx-auto m-5">
+        <form class="row g-3" [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+            <div class="col-md-6">
+                <label for="inputFirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="John" formControlName="first_name">
+              </div>
+              <div class="col-md-6">
+                <label for="inputLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="wik" formControlName="last_name">
+              </div>
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="john.wik@gmail.com" formControlName="email">
+            </div>
+            <!-- <div class="col-md-6">
+                <label for="inputGender" class="form-label">Gender</label>
+                <select id="inputState" class="form-select" formControlName="last_name">
+                  <option selected>Choose...</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div> -->
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" formControlName="address">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" formControlName="address2">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="New York" formControlName="city">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <input type="text" class="form-control" id="inputState" placeholder="Hawaii" formControlName="state">
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="35004" formControlName="zipcode">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+    </div>
+</div>
